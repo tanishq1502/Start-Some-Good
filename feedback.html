@@ -1,0 +1,216 @@
+<html>
+<head>
+<title> FEEDBACK FORM-SSG </title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.button
+{
+  background-color: #ffffff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  cursor: pointer;
+}
+div.rate{
+transform:rotateY(180deg);
+}
+.rate {
+    float: center;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:center;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+body{
+  background-color: black;
+}
+</style>
+</head>
+<body style="background-color:grey"><center>
+  <header>
+    <ul class="header">
+      <li class="top-list"><div class="logo"><img src="heart.png" alt="SSG" class="logo"></div></li>
+        <li class="top-list"><a href="home.html">Home</a></li>
+        <li class="top-list"><a href="auction.html">Auction</a></li>
+        <li class="top-list"><a href="Sale.html">Shop</a></li>
+        <li class="top-list"><a href="donations.html">Donation</a></li>
+        <!-- <li class="top-list" style="float: right;"><a href="#"><img src="home assets/images/shopping-cart.png" alt="shopping-cart"></a></li> -->
+        <li class="top-list" style="float: right;"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+        <li class="dropdown top-list" style="float: right;">
+          <a href="#" class="dropbtn">Settings</a>
+          <div class="dropdown-content">
+            <a href="contactus.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="index.html">Log Out</a>
+          </div>
+        </li>
+      </ul>
+</header>
+<h1 style="font-size:400%"><strong> FEEDBACK FORM: </strong></h1>
+<table>
+<form>
+<tr>
+<td> YOUR NAME*: </td>
+<td>
+<input type="text" maxlength="10" placeholder="First Name" required>
+<input type="text" maxlength="10" placeholder="Last Name" required>
+</td>
+</tr>
+<tr>
+<td> E-MAIL*: </td>
+<td>
+<input type="text" placeholder="e.g.hello@mail.com" required>
+</td>
+</tr>
+<tr>
+<td> CONTACT: </td>
+<td>
+<input type="tel" maxlength="3" placeholder="###">
+<input type="tel" maxlength="3" placeholder="###">
+<input type="tel" maxlength="4" placeholder="####">
+</td>
+</tr>
+<tr>
+<td> YOUR REVIEW: </td>
+<td><textarea rows="15" cols="50" placeholder="WRITE YOUR REVIW HERE"></textarea></td>
+</tr>
+<tr>
+<td> OVERALL EXPERIENCE: </td>
+<td>
+<input type="radio" id="Very Good" name="OVERALL EXPERIENCE" value="Very Good">
+<label for="Very Good"> Very Good </label>
+<input type="radio"  id="Good" name="OVERALL EXPERIENCE" value="Good">
+<label for="Good"> Good </label>
+<input type="radio"  id="Fair" name="OVERALL EXPERIENCE" value="Fair">
+<label for="Fair"> Fair </label>
+<input type="radio"  id="Poor" name="OVERALL EXPERIENCE" value="Poor">
+<label for="Poor"> Poor </label>
+</td>
+</tr>
+<tr>
+<td> TIMELY RESPONCE: </td>
+<td>
+<input type="radio" id="Very Good" name="TIMELY RESPONCE" value="Very Good">
+<label for="Very Good"> Very Good </label>
+<input type="radio"  id="Good" name="TIMELY RESPONCE" value="Good">
+<label for="Good"> Good </label>
+<input type="radio"  id="Fair" name="TIMELY RESPONCE" value="Fair">
+<label for="Fair"> Fair </label>
+<input type="radio"  id="Poor" name="TIMELY RESPONCE" value="Poor">
+<label for="Poor"> Poor </label>
+</td></tr>
+<tr>
+<td> OUR SUPPORT: </td>
+<td>
+<input type="radio" id="Very Good" name="OUR SUPPORT" value="Very Good">
+<label for="Very Good"> Very Good </label>
+<input type="radio"  id="Good" name="OUR SUPPORT" value="Good">
+<label for="Good"> Good </label>
+<input type="radio"  id="Fair" name="OUR SUPPORT" value="Fair">
+<label for="Fair"> Fair </label>
+<input type="radio"  id="Poor" name="OUR SUPPORT" value="Poor">
+<label for="Poor"> Poor </label>
+</td></tr>
+<tr>
+<td> OVERALL SATISFACTION: </td>
+<td>
+<input type="radio" id="Very Good" name="OVERALL SATISFACTION" value="Very Good">
+<label for="Very Good"> Very Good </label>
+<input type="radio"  id="Good" name="OVERALL SATISFACTION" value="Good">
+<label for="Good"> Good </label>
+<input type="radio"  id="Fair" name="OVERALL SATISFACTION" value="Fair">
+<label for="Fair"> Fair </label>
+<input type="radio"  id="Poor" name="OVERALL SATISFACTION" value="Poor">
+<label for="Poor"> Poor </label>
+</td></tr>
+</table>
+<p style="font-size:150%">WANT TO RATE US FOR OUR COUSTOMER SUPPORT </p>
+<div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text"></label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text"></label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text"></label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text"></label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text"></label>
+  </div>
+ <p style="font-size:150%">IS THERE ANYTHING YOU WOULD LIKE TO TELL US ? </p>
+<textarea rows="15" cols="80" placeholder="TYPE HERE"></textarea>
+<br> 
+<br>
+<br>
+<button><a href="submitted.html" class="button"><p style="color:black">Submit</p></button></a>
+</form>
+<br><br>
+<div class="footer">
+    <table class="foot-nav">
+      <thead>
+        <tr style="text-align:left">
+          <th>Find It Fast</th>
+          <th>Pages</th>
+          <th>My Account</th>
+          <th>Insights</th>
+        </tr>
+      </thead><br>
+      <tbody>
+        <tr style="text-align:left">
+          <td><a href="auction.html" class="footer-a"><li>Auction</li></a></td>
+          <td><a href="home.html" class="footer-a"><li>Home</li></a></td>
+          <td><a href="#" class="footer-a"><li>Orders</li></a></td>
+          <td><a href="contactus.html" class="footer-a"><li>Contact Us</li></a></td>
+        </tr>
+        <tr style="text-align:left">
+          <td><a href="Sale.html" class="footer-a"><li>Shop</li></a></td>
+          <td><a href="#" class="footer-a"><li>Cart</li></a></td>
+          <td><a href="#" class="footer-a"><li>Donations</li></a></td>
+          <td><a href="about.html" class="footer-a"><li>About Us</li></a></td>
+        </tr>
+        <tr style="text-align:left">
+          <td><a href="donations.html" class="footer-a"><li>Donation</li></a></td>
+          <td><a href="#" class="footer-a"><li>Account Settings</li></a></td>
+          <td><a href="#" class="footer-a"><li>Settings</li></a></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

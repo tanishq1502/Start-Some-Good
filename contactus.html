@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .column{
+    background-color: rgba(215, 216, 219, 0.856);
+    width: 300px;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 50px;
+    margin: 20px;
+    box-shadow: black;
+    }
+    #ex1{
+      
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 10px 10px;
+    align-items: center;
+    }
+    body{
+      background-image: url("phone.jpg");
+    background-repeat: no-repeat;
+   background-size: 100% 80%;
+   width: 100%;
+    }
+</style>
+<link rel="stylesheet" href="assets/css/contactus.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Contact Us-SSG</title>
+</head>
+<body >
+  
+  <header>
+    <ul class="header">
+      <li class="top-list"><div class="logo"><img src="heart.png" alt="SSG" class="logo"></div></li>
+        <li class="top-list"><a href="home.html">Home</a></li>
+        <li class="top-list"><a href="auction.html">Auction</a></li>
+        <li class="top-list"><a href="Sale.html">Shop</a></li>
+        <li class="top-list"><a href="donations.html">Donation</a></li>
+        <!-- <li class="top-list" style="float: right;"><a href="#"><img src="home assets/images/shopping-cart.png" alt="shopping-cart"></a></li> -->
+        <li class="top-list" style="float: right;"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+        <li class="dropdown top-list" style="float: right;">
+          <a href="#" class="dropbtn">Settings</a>
+          <div class="dropdown-content">
+            <a href="contactus.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="index.html">Log Out</a>
+          </div>
+        </li>
+      </ul>
+</header>
+  <div style="text-align:left; padding: 20px;">
+    <h2 style="color: white;font-size:40px;">Contact Us</h2>
+    <p style="color:white;font-size:20px;">Fill the following form:</p>
+  </div>
+  <div class="row">
+    <div id="ex1" class="column">
+      <form action="/action_page.php">
+ 
+        <div >
+          <div  style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+            <div >
+              <input  name="first" type="text" placeholder="First Name">
+            </div>
+        </div>
+        
+        <div >
+          <div  style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+            <div >
+              <input  name="last" type="text" placeholder="Last Name">
+            </div>
+        </div>
+        
+        <div>
+          <div style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+            <div >
+              <input  name="email" type="text" placeholder="Email">
+            </div>
+        </div>
+        
+        <div >
+          <div  style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+            <div class="w3-rest">
+              <input  name="phone" type="text" placeholder="Phone">
+            </div>
+        </div>
+        
+        <div >
+          <div style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+            <div >
+              <input name="message" type="text" placeholder="Message">
+            </div>
+        </div>
+        
+        <p >
+        <button > Send </button>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <table class="foot-nav">
+      <thead>
+        <tr style="text-align:left">
+          <th>Find It Fast</th>
+          <th>Pages</th>
+          <th>My Account</th>
+          <th>Insights</th>
+        </tr>
+      </thead><br>
+      <tbody>
+        <tr style="text-align:left">
+          <td><a href="auction.html" class="footer-a"><li>Auction</li></a></td>
+          <td><a href="home.html" class="footer-a"><li>Home</li></a></td>
+          <td><a href="#" class="footer-a"><li>Orders</li></a></td>
+          <td><a href="contactus.html" class="footer-a"><li>Contact Us</li></a></td>
+        </tr>
+        <tr style="text-align:left">
+          <td><a href="Sale.html" class="footer-a"><li>Shop</li></a></td>
+          <td><a href="#" class="footer-a"><li>Cart</li></a></td>
+          <td><a href="#" class="footer-a"><li>Donations</li></a></td>
+          <td><a href="about.html" class="footer-a"><li>About Us</li></a></td>
+        </tr>
+        <tr style="text-align:left">
+          <td><a href="donations.html" class="footer-a"><li>Donation</li></a></td>
+          <td><a href="#" class="footer-a"><li>Account Settings</li></a></td>
+          <td><a href="#" class="footer-a"><li>Settings</li></a></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+
+

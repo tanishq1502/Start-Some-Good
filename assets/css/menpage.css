@@ -1,0 +1,187 @@
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 6px solid black;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  .button1 {padding: 11px 7px;
+  width: 100%;
+  align-items: left;
+}
+  .button5 {padding: 9px;
+  width: 100%;
+  align-items:right ;
+}
+  body{
+    /* background-color: wheat ; */
+    background-image: url("");
+    background-repeat: no-repeat;
+   
+    background-size:cover;
+    width: 100%;
+  }
+
+/* Cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  .sunglasses{
+    display: flex;
+  }
+  .card:hover{
+      border: 4px black;
+      border-collapse: collapse;
+      border-style: solid;
+  }
+
+
+
+
+
+
+/* Navbar and footer */
+  ul.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  li.top-list {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  li.top-list a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li.top-list a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .logo{
+    width: 3em;
+    height: 3em;
+  }
+  form.example{
+    width: 500px;
+  }
+  form.example input[type=search] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 200px;
+  }
+  .foot-nav{
+    width: 100%;
+    margin: 0 50px;
+    padding: relative;
+  }
+  a.footer-a{
+    color: white;
+    text-decoration: none;
+  }
